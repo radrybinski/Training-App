@@ -99,8 +99,8 @@ namespace Training
 
         }
 
-
-
+        //Delegate
+        public delegate int Operacja(int x, int y);
 
 
 
@@ -108,6 +108,28 @@ namespace Training
         static void Main(string[] args)
         {
 
+            //Delagate
+
+            //static int Dodaj(int a, int b) => a + b;
+            //static int Odejmij(int a, int b) => a - b;
+
+            Operacja op1 = (x, y) => x + y;
+            Operacja op2 = (x, y) => x - y;
+            Operacja op3 = (x, y) => x * y;
+            Operacja op4 = (x, y) => x / y;
+
+            //Operacja op5 = (x, y, z) => x+y+z;
+
+
+
+
+            Console.WriteLine(op1(5,5));
+            Console.WriteLine(op2(5, 5));
+            Console.WriteLine(op3(5, 5));
+            Console.WriteLine(op4(5, 5));
+
+            /*
+            //File read/write
 
             string path = "d:\\test.txt";
             using (StreamReader sr = new StreamReader(path))
@@ -151,7 +173,7 @@ namespace Training
             }
 
 
-
+            */
 
 
 
