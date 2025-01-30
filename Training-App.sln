@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training-App", "Training-App.csproj", "{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training-App", "Training-App.csproj", "{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollSoftware", "..\PayrollSoftware\PayrollSoftware.csproj", "{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
