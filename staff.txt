@@ -1,0 +1,4 @@
+Adam, Manager
+Kubus, Manager
+Mikolaj, Admin
+Anna, Admin
