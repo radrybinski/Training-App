@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training-App", "Training-App.csproj", "{36A04C8A-DC87-4BE8-9F98-5D8992E2919F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollSoftware", "..\PayrollSoftware\PayrollSoftware.csproj", "{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollSoftware", "PayrollSoftware.csproj", "{FCD0DEE4-CCE7-4B2B-AD26-2B135C52F02F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
