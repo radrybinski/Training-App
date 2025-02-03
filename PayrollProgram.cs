@@ -159,21 +159,21 @@ namespace PayrollSoftware
                 {
                     while (sr.EndOfStream != true)
                     {
-                        Console.WriteLine(sr.ReadLine()); //display txt file in console    
+                          
                         stringLine = sr.ReadLine();
-                        result = stringLine.Split(separator, StringSplitOptions.None);
+                        result = stringLine.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
                         if (result[1] == "Manager")
                         {
                             Manager newManager = new Manager(result[0]);
                             myStaff.Add(newManager);
-                            Console.WriteLine($"New manager added (Name: {result[0]}");
+                            Console.WriteLine($"New manager added (Name: {result[0]})");
                         }
                         else if (result[1] == "Admin")
                         {
                             Admin newAdmin = new Admin(result[0]);
                             myStaff.Add(newAdmin);
-                            Console.WriteLine($"New admin added (Name: {result[0]}");
+                            Console.WriteLine($"New admin added (Name: {result[0]})");
 
                         }
 
@@ -234,7 +234,7 @@ namespace PayrollSoftware
 
             foreach (Staff f in myStaff)
             {
-                path = Path.Join(f.NameOfStaff, ".txt");
+                path = f.NameOfStaff + ".txt";
 
                 if (f is Manager)
                 {
@@ -320,7 +320,7 @@ namespace PayrollSoftware
 
                 foreach (var s in employee10houres)
                 {
-                    sw.WriteLine($"Name of Staff: {0}, Hours Worked: {1}", s.NameOfStaff, s.HouresWorked);
+                    sw.WriteLine("Name of Staff: {0}, Hours Worked: {1}", s.NameOfStaff, s.HouresWorked);
                 }
 
 
@@ -334,8 +334,8 @@ namespace PayrollSoftware
 
         public override string ToString()
         {
-            //not ready yet
-            return base.ToString();
+         
+            return "month = " + month + "year = " + year;
         }
 
 
@@ -386,7 +386,7 @@ namespace PayrollSoftware
 
                         int inputConverted = Convert.ToInt32(input);
 
-                        if (inputConverted > 0 || inputConverted <= 12)
+                        if (inputConverted > 0 && inputConverted <= 12)
                         {
                             month = inputConverted;
 
@@ -416,7 +416,7 @@ namespace PayrollSoftware
                 {
                     try
                     {
-                        Console.WriteLine($"Enter hours worked for {0}", myStaff[i].NameOfStaff);
+                        Console.WriteLine($"Enter hours worked for: {myStaff[i].NameOfStaff}");
                         string input = Console.ReadLine();
                         int inputConverted = Convert.ToInt32(input);
                         myStaff[i].HouresWorked = inputConverted;
